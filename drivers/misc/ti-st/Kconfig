@@ -15,8 +15,8 @@ config TI_ST
 	  packet types.
 
 config ST_GPS
-	tristate "GPS driver for ST"
-	depends on TI_ST
+	tristate "gps driver for ST"
+	select TI_ST
 	help
 	  This enables the GPS driver for TI BT/FM/GPS combo devices.
 	  It will provide a character device for the TI GPS host software to
@@ -30,4 +30,5 @@ config ST_HCI
 	  user-space Bluetooth stacks.
 	  It will provide a character device for user space Bluetooth stack to
 	  send/receive data over shared transport.
+
 endmenu
