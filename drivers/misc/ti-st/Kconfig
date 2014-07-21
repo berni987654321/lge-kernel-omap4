@@ -14,6 +14,7 @@ config TI_ST
 	  are returned to relevant protocol drivers based on their
 	  packet types.
 
+
 config ST_GPS
 	tristate "gps driver for ST"
 	select TI_ST
