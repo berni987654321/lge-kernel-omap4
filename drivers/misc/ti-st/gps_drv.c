@@ -802,4 +802,3 @@ static void __exit gpsdrv_exit(void)
 module_init(gpsdrv_init);
 module_exit(gpsdrv_exit);
 MODULE_LICENSE("GPL");
-
